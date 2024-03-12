@@ -1,0 +1,32 @@
+/** @format */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: black;
+}
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  height: 200px;
+  width: 50px;
+  border-right: 50px solid red;
+  border-left: 50px solid red;
+ border-radius: 5px;
+}
+.logo::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: red;
+  display: block;
+  transform: skew(20.5deg);
+  box-shadow: 0 0 30px black;
+}
